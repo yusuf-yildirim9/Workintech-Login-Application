@@ -1,0 +1,68 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  gap: 12px;
+  padding: 30px;
+  margin: 100px auto;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form label {
+  font-weight: bold;
+}
+
+.form input:not([type="checkbox"]) {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.form button {
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.form button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.form button:not(:disabled):hover {
+    background-color: #0056b3;
+}
+
+.form button:hover {
+  background-color: #0056b3;
+}
+.error-message {
+  color: #e53e3e;
+  font-size: 0.85rem;
+  margin-top: 4px;
+  margin-bottom: 12px;
+  font-weight: 500;
+  line-height: 1.4;
+  text-align: left;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
